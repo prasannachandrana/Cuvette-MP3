@@ -1,4 +1,3 @@
-// Original data
 const foodData = [
     {
         id: 1,
@@ -347,7 +346,6 @@ const listByProteinHighToLow = (data) =>
 const listByCarbsLowToHigh = (data) =>
     data.sort((a, b) => a.cab - b.cab).map((item) => item.foodname);
 
-// Execute Functions
 console.log("All Food Items:", listAllFoodItems(foodData));
 console.log("Vegetable Category:", listByCategory(foodData, "Vegetable"));
 console.log("Fruit Category:", listByCategory(foodData, "Fruit"));
